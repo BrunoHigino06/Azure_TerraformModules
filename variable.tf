@@ -7,5 +7,9 @@ variable "subnet" {
     delegation_name = optional(string)
     service_delegation_name = optional(string)
     service_delegation_actions = optional(list(string))
+    private_endpoint_network_policies = optional(string)
+    private_link_service_network_policies_enabled = optional(string)
+    service_endpoints = optional(list(string))
+    service_endpoint_policy_ids = optional(list(string))
   }))
 }
